@@ -1,0 +1,39 @@
+
+.accordion {
+    background-color: #eee;
+    color: blueviolet;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    font-size: 24px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.text {
+    background-color: white;
+    display: none;
+    font-size: 20px;
+    width: 48%;
+    border: 1px solid blueviolet;
+    padding: 0 1%;
+    transition: 0.3s;
+}
+.text.active {
+    display: block;
+}
+.icon {
+    float: right;
+}
+.icon::before {
+    content: "⋀";
+    font-size: 24px;
+    color: blueviolet;
+    font-weight: 800;
+}
+.icon.active::before {
+    content: "⋁";
+}
